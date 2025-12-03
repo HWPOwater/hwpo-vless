@@ -144,26 +144,32 @@
 
 
 <pre id="vless-data" style="display:none;">
-<script>
-  async function loadVless() {
-    const pre = document.getElementById('vless-data');
-    try {
-      const res = await fetch('/.netlify/functions/get-vless-links');
-      if (!res.ok) {
-        pre.textContent = 'Ошибка загрузки конфигов.';
-        return;
-      }
-      const text = await res.text();
-      pre.textContent = text;
-      // если надо, чтобы VPN-прилы видели <pre>, можешь сделать его видимым:
-      // pre.style.display = 'block';
-    } catch (e) {
-      pre.textContent = 'Ошибка сети при загрузке конфигов.';
-    }
-  }
-
-  loadVless();
-</script>
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@2.c:1?type=xhttp&host=&path=/infaso5MOUI&mode=packet-up&security=reality&fp=chrome&sni=german.threadshieldswap.rest&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89&spx=/#%E2%86%93%20%D0%9E%D0%B1%D1%8B%D1%87%D0%BD%D1%8B%D0%B5%20%E2%86%93
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@ru.threadshieldswap.rest:443?type=xhttp&host=&path=/infaso5MOUI&mode=packet-up&security=reality&fp=chrome&sni=ru.threadshieldswap.rest&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89&spx=/#%F0%9F%87%B7%F0%9F%87%BARussia%20%7C%20xhttp
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@ru.threadshieldswap.rest:6443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=ru.threadshieldswap.rest&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89&spx=/#%F0%9F%87%B7%F0%9F%87%BARussia%20%7C%20tcp
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@ru.threadshieldswap.rest:5443?type=grpc&mode=gun&serviceName=hello&security=reality&fp=chrome&sni=ru.threadshieldswap.rest&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89#%F0%9F%87%B7%F0%9F%87%BARussia%20%7C%20GRPC
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@sweden.threadshieldswap.rest:443?type=xhttp&host=&path=/infaso5MOUI&mode=packet-up&security=reality&fp=chrome&sni=sweden.threadshieldswap.rest&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89&spx=/#%F0%9F%87%B8%F0%9F%87%AASweden%20%7C%20xhttp
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@sweden.threadshieldswap.rest:6443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=sweden.threadshieldswap.rest&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89&spx=/#%F0%9F%87%B8%F0%9F%87%AASweden%20%7C%20tcp
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@sweden.threadshieldswap.rest:5443?type=grpc&mode=gun&serviceName=hello&security=reality&fp=chrome&sni=sweden.threadshieldswap.rest&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89#%F0%9F%87%B8%F0%9F%87%AASweden%20%7C%20GRPC
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@finland.threadshieldswap.rest:443?type=xhttp&host=&path=/infaso5MOUI&mode=packet-up&security=reality&fp=chrome&sni=finland.threadshieldswap.rest&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89&spx=/#%F0%9F%87%AB%F0%9F%87%AEFinland%20%7C%20xhttp
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@finland.threadshieldswap.rest:6443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=finland.threadshieldswap.rest&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89&spx=/#%F0%9F%87%AB%F0%9F%87%AEFinland%20%7C%20tcp
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@finland.threadshieldswap.rest:5443?type=grpc&mode=gun&serviceName=hello&security=reality&fp=chrome&sni=finland.threadshieldswap.rest&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89#%F0%9F%87%AB%F0%9F%87%AEFinland%20%7C%20GRPC
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@niderlands.threadshieldswap.rest:443?type=xhttp&host=&path=/infaso5MOUI&mode=packet-up&security=reality&fp=chrome&sni=niderlands.threadshieldswap.rest&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89&spx=/#%F0%9F%87%B3%F0%9F%87%B1Netherlands%20%7C%20xhttp
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@niderlands.threadshieldswap.rest:6443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=niderlands.threadshieldswap.rest&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89&spx=/#%F0%9F%87%B3%F0%9F%87%B1Netherlands%20%7C%20tcp
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@niderlands.threadshieldswap.rest:5443?type=grpc&mode=gun&serviceName=hello&security=reality&fp=chrome&sni=niderlands.threadshieldswap.rest&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89#%F0%9F%87%B3%F0%9F%87%B1Netherlands%20%7C%20GRPC
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@german.threadshieldswap.rest:443?type=xhttp&host=&path=/infaso5MOUI&mode=packet-up&security=reality&fp=chrome&sni=german.threadshieldswap.rest&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89&spx=/#%F0%9F%87%A9%F0%9F%87%AAGermany%20%7C%20xhttp
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@german.threadshieldswap.rest:6443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=german.threadshieldswap.rest&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89&spx=/#%F0%9F%87%A9%F0%9F%87%AAGermany%20%7C%20tcp
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@german.threadshieldswap.rest:5443?type=grpc&mode=gun&serviceName=hello&security=reality&fp=chrome&sni=german.threadshieldswap.rest&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89#%F0%9F%87%A9%F0%9F%87%AAGermany%20%7C%20GRPC
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@us.threadshieldswap.rest:443?type=xhttp&host=&path=/infaso5MOUI&mode=packet-up&security=reality&fp=chrome&sni=us.threadshieldswap.rest&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89&spx=/#%F0%9F%87%BA%F0%9F%87%B8USA%20%7C%20xhttp
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@us.threadshieldswap.rest:6443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=us.threadshieldswap.rest&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89&spx=/#%F0%9F%87%BA%F0%9F%87%B8USA%20%7C%20tcp
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@us.threadshieldswap.rest:5443?type=grpc&mode=gun&serviceName=hello&security=reality&fp=chrome&sni=us.threadshieldswap.rest&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89#%F0%9F%87%BA%F0%9F%87%B8USA%20%7C%20GRPC
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@123.c:1?type=xhttp&host=&path=/infaso5MOUI&mode=packet-up&security=reality&fp=chrome&sni=german.threadshieldswap.rest&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89&spx=/#%E2%86%93%20White%20List%20%E2%86%93%20%5BMulti-Config%5D
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@ru.threadshieldswap.rest:6445?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=api-maps.yandex.ru&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89&spx=/#%F0%9F%87%B7%F0%9F%87%BARussia%20%7C%20White%20List
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@sweden.threadshieldswap.rest:6445?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=sun6-21.userapi.com&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89&spx=/#%F0%9F%87%B8%F0%9F%87%AASweden%20%7C%20White%20List
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@finland.threadshieldswap.rest:6445?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=sun6-21.userapi.com&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89&spx=/#%F0%9F%87%AB%F0%9F%87%AEFinland%20%7C%20White%20List
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@niderlands.threadshieldswap.rest:6445?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=api-maps.yandex.ru&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89&spx=/#%F0%9F%87%B3%F0%9F%87%B1Netherlands%20%7C%20White%20List
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@german.threadshieldswap.rest:6445?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=sun6-21.userapi.com&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89&spx=/#%F0%9F%87%A9%F0%9F%87%AAGermany%20%7C%20White%20List
+vless://1e046cb9-14b8-4ec6-b914-2f832b12b339@us.threadshieldswap.rest:6445?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=api-maps.yandex.ru&pbk=B8LBxe-5B5MOUIvfKCb4cjs7JfpGj2VkqGdlENaGHyg&sid=1145d2c077dfab89&spx=/#%F0%9F%87%BA%F0%9F%87%B8USA%20%7C%20White%20List
 </pre>
 
 
